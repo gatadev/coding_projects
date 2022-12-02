@@ -95,11 +95,11 @@ function printQuote() {
   // exists, and if it does, concatenate a <span></span>
   // element, appropriate className, and citation property
   // to the HTML string
-  if (quote.citation) {
-    html += `<span class="citation"> ${quotes.citation} </span>`;
+  if (callingRandomQuote.citation) {
+    html += `<span class="citation"> ${callingRandomQuote.citation} </span>`;
   }
-  if (quote.year) {
-    html += `<span class="year"> ${quotes.year} </span>`;
+  if (callingRandomQuote.year) {
+    html += `<span class="year"> ${callingRandomQuote.year} </span>`;
   }
  
   // 4. Use an if statement to check of the year property exists,
