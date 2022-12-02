@@ -101,7 +101,7 @@ function printQuote() {
   if (quote.year) {
     html += `<span class="year"> ${quotes.year} </span>`;
   }
-  printQuote();
+ 
   // 4. Use an if statement to check of the year property exists,
   // and if it does, concatenate a <span></span> element,
   // appropriate className, and year property to the HTML
@@ -123,3 +123,4 @@ function printQuote() {
 document
   .getElementById("load-quote")
   .addEventListener("click", printQuote, false);
+printQuote();
