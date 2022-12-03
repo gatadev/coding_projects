@@ -87,8 +87,8 @@ function printQuote() {
   // and the quote and source properties, but leave off
   // the second closing `</p>` tag for now
   let html = `<div class ='quote-box'>
-   <p class="quote"> ${quotes.quote} </p>
-   <p class='source">${quotes.source}
+   <p class="quote"> ${callingRandomQuote.quote} </p>
+   <p class='source">${callingRandomQuote.source}
 
 </div>`;
   // 3. Use an if statement to check if the citation property
