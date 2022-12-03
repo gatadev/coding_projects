@@ -112,7 +112,7 @@ function printQuote() {
 
   // 6. set the innerHTML of the quote-box div to equal the
   // complete HTML string
-  document.getElementById("quote-box").innerHtml = "html";
+  document.getElementById("quote-box").innerHTML = html;
 }
 
 /***
