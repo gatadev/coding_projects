@@ -2,55 +2,55 @@
 
 var quotes = [
   {
-    quote1:
+    quote:
       "Your real job in life is to figured out what it is you are called to do.",
     source: "Oprah Winfrey",
     citation: "",
     year: ""
   },
   {
-    quote2:
+    quote:
       "Life was meant to be lived, and curiosity must be kept alive.One must never, for whatever reason, turn his back on life.",
     source: " Eleanor Roosevelt",
     citation: "",
     year: ""
   },
   {
-    quote3:
+    quote:
       "It is our choices that show what we truly are, far more than our abilities.",
     source: "J.K Rowling",
     citation: "",
     year: ""
   },
   {
-    quote4:
+    quote:
       " If we want greater clarity in our purpose or deeper and more meaningful spritual lives, vulnerability is the path.",
     source: "Brené Brown",
     citation: "",
     year: ""
   },
   {
-    quote5:
+    quote:
       "You have to trust in something-your gut, destiny, life, karma, whatever. This approach has never let me down and it has made all the difference in my life.",
     source: "Steve Jobs",
     citation: "",
     year: ""
   },
   {
-    quote6: "Efforts and courage are not enough without purpose and direction",
+    quote: "Efforts and courage are not enough without purpose and direction",
     source: " John F. Kennedy",
     citation: "",
     year: ""
   },
   {
-    quote7:
+    quote:
       "I believe purpose is something for which one is responsible; it is not just divinely assigned.",
     source: " Michael J.Fox",
     citation: "",
     year: ""
   },
   {
-    quote8: "Out of the mountain of despair, a stone of hope.",
+    quote: "Out of the mountain of despair, a stone of hope.",
     source: " Martin Luther King Jr",
     citation: "",
     year: ""
