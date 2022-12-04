@@ -134,10 +134,10 @@ function printQuote() {
   if (callingRandomQuote.year) {
     html += `<span class="year"> ${callingRandomQuote.year} </span>`;
   }
-  var spanCreate = document.createElement("span.addClassList= 'category'");
-  var phrase = document.getElementsByTagName(p[1]);
-  spanCreate.innerHTML = "category";
-  var spannAdd = phrase.push("spanCreate");
+  
+  
+  
+  
   if (callingRandomQuote.category) {
     html += `<span class="category"> ${callingRandomQuote.category} </span>`;
   }
