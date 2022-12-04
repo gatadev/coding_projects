@@ -3,10 +3,10 @@
 var quotes = [
   {
     quote:
-      "Your real job in life is to figured out what it is you are called to do.",
-    source: "Oprah Winfrey",
-    citation: "",
-    year: ""
+      " Your real job in life is to figured out what it is you are called to do. ",
+    source: " Oprah Winfrey ",
+    citation: " ",
+    year: " "
   },
   {
     quote:
@@ -31,21 +31,22 @@ var quotes = [
   },
   {
     quote:
-      "You have to trust in something-your gut, destiny, life, karma, whatever. This approach has never let me down and it has made all the difference in my life.",
+      " You have to trust in something-your gut, destiny, life, karma, whatever. This approach has never let me down and it has made all the difference in my life.",
     source: "Steve Jobs",
     citation: "",
     year: ""
   },
   {
-    quote: "Efforts and courage are not enough without purpose and direction",
+    quote:
+      " Efforts and courage are not enough without purpose and direction. ",
     source: " John F. Kennedy",
     citation: "",
     year: ""
   },
   {
     quote:
-      "I believe purpose is something for which one is responsible; it is not just divinely assigned.",
-    source: " Michael J.Fox",
+      " I believe purpose is something for which one is responsible; it is not just divinely assigned.",
+    source: " Michael J.Fox ",
     citation: "",
     year: ""
   },
@@ -53,6 +54,27 @@ var quotes = [
     quote: "Out of the mountain of despair, a stone of hope.",
     source: " Martin Luther King Jr",
     citation: "",
+    year: ""
+  },
+  {
+    quote:
+      "It is better to be hated for what you are than to be loved for what you are not.",
+    source: "Andre Gide",
+    citation: "Autumn Leaves ",
+    year: ""
+  },
+  {
+    quote:
+      "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+
+    source: "Ralph Waldo Emerson",
+    citation: " ",
+    year: ""
+  },
+  {
+    quote: "Be the change that you wish to see in the world.",
+    source: "Mahatma Gandhi",
+    citation: " ",
     year: ""
   }
 ];
@@ -88,7 +110,7 @@ function printQuote() {
   // the second closing `</p>` tag for now
   let html = `<div class ='quote-box'>
    <p class="quote"> ${callingRandomQuote.quote} </p>
-   <p class='source">${callingRandomQuote.source}
+   <p class="source">${callingRandomQuote.source}
 
 </div>`;
   // 3. Use an if statement to check if the citation property
@@ -101,7 +123,7 @@ function printQuote() {
   if (callingRandomQuote.year) {
     html += `<span class="year"> ${callingRandomQuote.year} </span>`;
   }
- 
+
   // 4. Use an if statement to check of the year property exists,
   // and if it does, concatenate a <span></span> element,
   // appropriate className, and year property to the HTML
@@ -113,6 +135,7 @@ function printQuote() {
   // 6. set the innerHTML of the quote-box div to equal the
   // complete HTML string
   document.getElementById("quote-box").innerHTML = html;
+  printQuote();
 }
 
 /***
@@ -123,4 +146,3 @@ function printQuote() {
 document
   .getElementById("load-quote")
   .addEventListener("click", printQuote, false);
-printQuote();
