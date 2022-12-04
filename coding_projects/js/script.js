@@ -140,7 +140,7 @@ function printQuote() {
   var spannAdd = phrase.push("spanCreate");
   if (callingRandomQuote.category) {
     html += `<span class="category"> ${callingRandomQuote.category} </span>`;
-
+  }
   // 4. Use an if statement to check of the year property exists,
   // and if it does, concatenate a <span></span> element,
   // appropriate className, and year property to the HTML
