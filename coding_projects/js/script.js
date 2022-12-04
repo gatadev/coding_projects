@@ -46,7 +46,7 @@ var quotes = [
       " Efforts and courage are not enough without purpose and direction. ",
     source: " John F. Kennedy",
     citation: "",
-    year: ""
+    year: "",
     category:"Motivational"
   },
   {
