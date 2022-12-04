@@ -6,35 +6,40 @@ var quotes = [
       " Your real job in life is to figured out what it is you are called to do. ",
     source: " Oprah Winfrey ",
     citation: " ",
-    year: " "
+    year: " ",
+    category: "leadership"
   },
   {
     quote:
       "Life was meant to be lived, and curiosity must be kept alive.One must never, for whatever reason, turn his back on life.",
     source: " Eleanor Roosevelt",
     citation: "",
-    year: ""
+    year: "",
+    category:"humanity"
   },
   {
     quote:
       "It is our choices that show what we truly are, far more than our abilities.",
     source: "J.K Rowling",
     citation: "",
-    year: ""
+    year: "",
+    category:"Motivational"
   },
   {
     quote:
       " If we want greater clarity in our purpose or deeper and more meaningful spritual lives, vulnerability is the path.",
     source: "Brené Brown",
     citation: "",
-    year: ""
+    year: "",
+    category:""
   },
   {
     quote:
       " You have to trust in something-your gut, destiny, life, karma, whatever. This approach has never let me down and it has made all the difference in my life.",
     source: "Steve Jobs",
     citation: "",
-    year: ""
+    year: "",
+    category:""
   },
   {
     quote:
@@ -42,26 +47,30 @@ var quotes = [
     source: " John F. Kennedy",
     citation: "",
     year: ""
+    category:"Motivational"
   },
   {
     quote:
       " I believe purpose is something for which one is responsible; it is not just divinely assigned.",
     source: " Michael J.Fox ",
     citation: "",
-    year: ""
+    year: "",
+    category:""
   },
   {
     quote: "Out of the mountain of despair, a stone of hope.",
     source: " Martin Luther King Jr",
     citation: "",
-    year: ""
+    year: "",
+    category:""
   },
   {
     quote:
       "It is better to be hated for what you are than to be loved for what you are not.",
     source: "Andre Gide",
     citation: "Autumn Leaves ",
-    year: ""
+    year: "",
+    category:""
   },
   {
     quote:
@@ -69,13 +78,15 @@ var quotes = [
 
     source: "Ralph Waldo Emerson",
     citation: " ",
-    year: ""
+    year: "",
+    category:""
   },
   {
     quote: "Be the change that you wish to see in the world.",
     source: "Mahatma Gandhi",
     citation: " ",
-    year: ""
+    year: "",
+    category:""
   }
 ];
 
@@ -123,6 +134,12 @@ function printQuote() {
   if (callingRandomQuote.year) {
     html += `<span class="year"> ${callingRandomQuote.year} </span>`;
   }
+  var spanCreate = document.createElement("span.addClassList= 'category'");
+  var phrase = document.getElementsByTagName(p[1]);
+  spanCreate.innerHTML = "category";
+  var spannAdd = phrase.push("spanCreate");
+  if (callingRandomQuote.category) {
+    html += `<span class="category"> ${callingRandomQuote.category} </span>`;
 
   // 4. Use an if statement to check of the year property exists,
   // and if it does, concatenate a <span></span> element,
