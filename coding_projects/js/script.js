@@ -158,7 +158,7 @@ function getRandomBackgroundColor() {
   var r = Math.floor(Math.random() * 255);
   var g = Math.floor(Math.random() * 255);
   var b = Math.floor(Math.random() * 255);
-  document.html.style.backgroundColor = "`rgb(' + r + ', ' + g + ', ' + b +')`";
+  document.body.style.backgroundColor = rgb(r,g,b);
 }
 /***
  * click event listener for the print quote button
@@ -170,11 +170,3 @@ document
   .addEventListener("click", printQuote, getRandomBackgroundColor, false);
 
 
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
- ***/
-
-document
-  .getElementById("load-quote")
-  .addEventListener("click", printQuote, false);
