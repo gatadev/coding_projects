@@ -1,5 +1,4 @@
-//Build the array of quote objects to store the quotes.
-
+// declaring array of object
 var quotes = [
   {
     quote:
@@ -15,7 +14,7 @@ var quotes = [
     source: " Eleanor Roosevelt",
     citation: "",
     year: "",
-    category:"humanity"
+    category: "humanity"
   },
   {
     quote:
@@ -23,7 +22,7 @@ var quotes = [
     source: "J.K Rowling",
     citation: "",
     year: "",
-    category:"Motivational"
+    category: "Motivational"
   },
   {
     quote:
@@ -31,7 +30,7 @@ var quotes = [
     source: "Brené Brown",
     citation: "",
     year: "",
-    category:""
+    category: ""
   },
   {
     quote:
@@ -39,7 +38,7 @@ var quotes = [
     source: "Steve Jobs",
     citation: "",
     year: "",
-    category:""
+    category: ""
   },
   {
     quote:
@@ -47,7 +46,7 @@ var quotes = [
     source: " John F. Kennedy",
     citation: "",
     year: "",
-    category:"Motivational"
+    category: "Motivational"
   },
   {
     quote:
@@ -55,14 +54,14 @@ var quotes = [
     source: " Michael J.Fox ",
     citation: "",
     year: "",
-    category:""
+    category: ""
   },
   {
     quote: "Out of the mountain of despair, a stone of hope.",
     source: " Martin Luther King Jr",
     citation: "",
     year: "",
-    category:""
+    category: " civil movement"
   },
   {
     quote:
@@ -70,7 +69,7 @@ var quotes = [
     source: "Andre Gide",
     citation: "Autumn Leaves ",
     year: "",
-    category:""
+    category: "Personality"
   },
   {
     quote:
@@ -79,31 +78,28 @@ var quotes = [
     source: "Ralph Waldo Emerson",
     citation: " ",
     year: "",
-    category:""
+    category: ""
   },
   {
     quote: "Be the change that you wish to see in the world.",
     source: "Mahatma Gandhi",
     citation: " ",
     year: "",
-    category:""
+    category: "leadership"
   }
 ];
 
 /***
- * `getRandomQuote` function
+ function to getRandomQuote
  ***/
 function getRandomQuote() {
-  // 1. Create a variable that generates a random number
-  // between zero and the last index in the `quotes` array
+  // creating a variable to store randomNumber between 0 && and length of the array
   var randomNumber = Math.floor(Math.random() * quotes.length);
 
-  // 2. Use the random number variable and bracket notation
-  // to grab a random object from the `quotes` array, and
-  // store it in a variable
+  // variable to store randomOject at the specific position
   var randomObject = quotes[randomNumber];
 
-  // 3. Return the variable storing the random quote object
+  // return object randomly
 
   return randomObject;
 }
@@ -112,54 +108,46 @@ function getRandomQuote() {
  * `printQuote` function
  ***/
 function printQuote() {
-  // 1. Create a variable that calls the getRandomQuote()
-  // function
+  //strore block of code above into variable
   var callingRandomQuote = getRandomQuote();
-  // 2. Create a variable that initiates your HTML string with
-  // the first two <p></p> elements, their classNames,
-  // and the quote and source properties, but leave off
-  // the second closing `</p>` tag for now
+  // initialize the html as variable by randomly accessing the paragraph value
   let html = `<div class ='quote-box'>
    <p class="quote"> ${callingRandomQuote.quote} </p>
    <p class="source">${callingRandomQuote.source}
-
 </div>`;
-  // 3. Use an if statement to check if the citation property
-  // exists, and if it does, concatenate a <span></span>
-  // element, appropriate className, and citation property
-  // to the HTML string
+  // conditional to check if the citation and year exist then display them
   if (callingRandomQuote.citation) {
     html += `<span class="citation"> ${callingRandomQuote.citation} </span>`;
   }
   if (callingRandomQuote.year) {
     html += `<span class="year"> ${callingRandomQuote.year} </span>`;
   }
-  
-  
-  
-  
+  //conditional to check if category exist then access it property and value
   if (callingRandomQuote.category) {
     html += `<span class="category"> ${callingRandomQuote.category} </span>`;
   }
-  // 4. Use an if statement to check of the year property exists,
-  // and if it does, concatenate a <span></span> element,
-  // appropriate className, and year property to the HTML
-  //string
-
-  // 5. After the two if statements, concatenate the closing </p>
-  // tag to the HTML string
-
-  // 6. set the innerHTML of the quote-box div to equal the
-  // complete HTML string
+  //set the innerHTML to html variable will display the value of the variable
   document.getElementById("quote-box").innerHTML = html;
-  
+  //calling getRandomBackgroundColor() display show the target desire for the function
+  getRandomBackgroundColor();
+  //set interval function calling
+  quoteInterval();
 }
+//function to randomly get a backgrounfColor
 function getRandomBackgroundColor() {
   var r = Math.floor(Math.random() * 255);
   var g = Math.floor(Math.random() * 255);
   var b = Math.floor(Math.random() * 255);
+
   document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
+//set interval function
+function quoteInterval() {
+  printQuote();
+}
+// take two parameters function, and delay time
+const timerId = setInterval(quoteInterval, 100);
+
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
@@ -167,6 +155,4 @@ function getRandomBackgroundColor() {
 
 document
   .getElementById("load-quote")
-  .addEventListener("click", printQuote, getRandomBackgroundColor, false);
-
-
+  .addEventListener("click", printQuote, false);
