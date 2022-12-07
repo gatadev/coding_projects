@@ -5,7 +5,7 @@ var quotes = [
       " Your real job in life is to figured out what it is you are called to do. ",
     source: " Oprah Winfrey ",
     citation: " ",
-    year: " ",
+    year: 2005,
     category: "leadership"
   },
   {
@@ -21,7 +21,7 @@ var quotes = [
       "It is our choices that show what we truly are, far more than our abilities.",
     source: "J.K Rowling",
     citation: "",
-    year: "",
+    year: 1972,
     category: "Motivational"
   },
   {
@@ -29,7 +29,7 @@ var quotes = [
       " If we want greater clarity in our purpose or deeper and more meaningful spritual lives, vulnerability is the path.",
     source: "Brené Brown",
     citation: "",
-    year: "",
+    year: 1960,
     category: ""
   },
   {
@@ -45,7 +45,7 @@ var quotes = [
       " Efforts and courage are not enough without purpose and direction. ",
     source: " John F. Kennedy",
     citation: "",
-    year: "",
+    year: 1964,
     category: "Motivational"
   },
   {
